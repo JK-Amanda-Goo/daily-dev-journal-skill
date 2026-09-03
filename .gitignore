@@ -1,0 +1,21 @@
+# Personal data must never be committed.
+#
+# The skill keeps your config and past post drafts in a workspace outside this
+# repo (~/daily-dev-journal/ by default). These rules are a second line of
+# defense in case anything lands here by accident.
+
+daily-dev-journal/
+posts/
+config.md
+workspace/
+
+# Common accidents — local notes, drafts, journal entries
+draft*.md
+my-*.md
+*.local.md
+*-post.md
+*-draft.md
+
+.DS_Store
+__pycache__/
+*.pyc
