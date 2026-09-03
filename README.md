@@ -1,4 +1,4 @@
-# daily-dev-journal
+# Daily Dev Journal (Claude Code skill)
 
 A [Claude Code](https://docs.claude.com/en/docs/claude-code) skill that turns a day of work into one short, honest X/Twitter post about what you actually learned.
 
@@ -15,8 +15,8 @@ A hand-written dev-journal entry is already thoughtful, but only exists if you w
 Clone it into your Claude Code skills directory (or symlink it there):
 
 ```bash
-git clone https://github.com/JK-Amanda-Goo/daily-dev-journal ~/Projects/daily-dev-journal
-ln -s ~/Projects/daily-dev-journal ~/.claude/skills/daily-dev-journal
+git clone https://github.com/JK-Amanda-Goo/daily-dev-journal-skill ~/Projects/daily-dev-journal-skill
+ln -s ~/Projects/daily-dev-journal-skill ~/.claude/skills/daily-dev-journal
 ```
 
 On first run the skill creates `~/daily-dev-journal/config.md` from a template and walks you through filling it in — handle, audience, which projects are fair game, a redaction list, and format preferences.

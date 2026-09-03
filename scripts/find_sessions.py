@@ -96,7 +96,10 @@ def extract_text(content) -> str:
         for block in content:
             if isinstance(block, dict) and block.get("type") == "text":
                 parts.append(block.get("text", ""))
-        return "\n".join(p for p in parts if p).strip()
+        text = "\n".join(p for p in parts if p).strip()
+        if text.startswith("Base directory for this skill:") or text.startswith("<command-name>"):
+            return ""
+        return text
     return ""
 
 

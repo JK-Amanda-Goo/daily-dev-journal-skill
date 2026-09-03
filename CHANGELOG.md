@@ -13,4 +13,4 @@ Initial release.
 - `assets/config-template.md` — config scaffold (handle, audience, sources, always/never-share, redaction list, format prefs).
 - `scripts/find_sessions.py` — condenses a day's Claude Code session transcripts (`~/.claude/projects/*/*.jsonl`) into a per-session Markdown digest: prompts, files touched, condensed action sequence.
 
-[0.1.0]: https://github.com/JK-Amanda-Goo/daily-dev-journal/releases/tag/v0.1.0
+[0.1.0]: https://github.com/JK-Amanda-Goo/daily-dev-journal-skill/releases/tag/v0.1.0
