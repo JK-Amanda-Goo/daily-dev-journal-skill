@@ -11,7 +11,7 @@ The trap this skill exists to avoid: most daily dev posts are either a bare acti
 
 Two hard rules:
 - **This skill never posts.** It hands the user copy-paste-ready text. Posting is always a human action.
-- **Nothing from a private or work context goes out without the user saying yes.** See Step 7.
+- **Nothing from a private or work context goes out without the user saying yes.** See Step 8.
 
 ## The workspace
 
@@ -115,7 +115,22 @@ Read every draft back and cut the tells. X has its own slop dialect, distinct fr
 
 The test: could this post have been written by someone who wasn't actually there that day? If yes, it's missing the detail.
 
-## Step 7 — Privacy pass
+## Step 7 — Community tags (optional)
+
+Skip this step unless `config.md`'s **Hashtags** preference asks for it (see the updated options in `assets/config-template.md`) or the user requests it for this run. It's a research step, not a default — most posts are stronger with zero or one hashtag, per Step 6.
+
+When it applies: find **3 hashtags that are actually live in the specific niche this post is about**, not generic reach-seeking tags. The difference matters — `#buildinpublic #100DaysOfCode #coding` is exactly the stuffing pattern Step 6 warns against; three well-chosen tags for *this post's actual topic* is a different thing.
+
+1. **Name the niche precisely.** Not the account's general angle from `config.md` — the specific technology, tool, or community this one post's learning belongs to (e.g. "Claude Code hooks," not "AI coding" or "programming").
+2. **Search for what's actually in use.** Use `WebSearch` (this skill has no X API access) to check which tags real, recent posts in that niche use — e.g. `"#ClaudeCode" X posts` or searching the topic plus `hashtag`. Don't invent plausible-sounding tags from guesswork; confirm they're live.
+3. **Prefer specific over broad.** A tag naming the exact tool, language, or community (`#ClaudeCode`, `#SwiftUI`, `#LocalLLM`) beats a broad one (`#coding`, `#tech`, `#dev`) every time — broad tags are the ones that read as reach-seeking.
+4. **Exactly 3, or fewer if 3 good ones don't exist.** Never pad to 3 with a weak filler tag — 1 or 2 real ones beat 3 with a throwaway. State when you're showing fewer than 3 and why.
+5. **Show your picks with a one-line reason each** before adding them — the user knows their community better than a search does, and may swap one for a specific X Community or a tag tied to an account/event they know is active.
+6. **Place them together on the post's last line**, space-separated, after the main text — never interspersed mid-sentence.
+
+This runs before the privacy pass so that pass also covers the tags — a tag can itself be identifying (a small niche community, an employer's product tag) even when the post text is clean.
+
+## Step 8 — Privacy pass
 
 Before anything is handed over, check the draft against the `config.md` redaction list and the day's context:
 
@@ -126,7 +141,7 @@ Before anything is handed over, check the draft against the `config.md` redactio
 
 When in doubt, show the user exactly what's identifying and let them decide. Offer a genericized version alongside ("a client project" / "a data pipeline I work on") so they have a safe option ready.
 
-## Step 8 — Deliver and archive
+## Step 9 — Deliver and archive
 
 Present the final draft(s) as clean copy-paste blocks — just the post text, nothing to trim. State the character count for each. **Do not post, and don't offer to** — the user copies it out themselves.
 

@@ -38,6 +38,6 @@ Names and strings to strip or mask before anything goes out:
 
 - **Default:** single post   <or "thread">
 - **Max length:** 280   <or higher if your account allows long posts>
-- **Hashtags:** no   <or "one, if relevant">
+- **Hashtags:** no   <or "one, if relevant" / "research 3 community tags" — the last option triggers Step 7's live-search step and adds exactly 3 (or fewer, never padded) niche-specific tags on the post's last line>
 - **Emoji:** sparingly   <or "no" / "yes">
 - **Variants per run:** 2

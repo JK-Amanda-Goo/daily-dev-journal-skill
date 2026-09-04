@@ -50,6 +50,16 @@ Say your actual thing.
 
 If `config.md` names a `-voice` skill, draft through it. Otherwise, match how the user writes in the conversation — sentence length, whether they swear, whether they use lowercase, how much they hedge. A dev post should sound like a person talking to peers, not like documentation and not like a press release.
 
+## Community tags (when Step 7 applies)
+
+Only relevant when `config.md` asks for researched tags. The failure mode to avoid is the same one Step 6 already names — `#coding #dev #buildinpublic #100DaysOfCode` reads as reach-seeking because those tags describe the *account*, not this specific post. A tag that's actually good does the opposite: it tells a reader already following that exact niche "this is for you."
+
+**What a good one looks like:** names the specific tool, language, framework, or community the post's learning is about. `#ClaudeCode`, `#SwiftUI`, `#LocalLLM`, `#Rust` — each narrows the audience to people who'd genuinely care. Confirm via `WebSearch` that real, recent posts use it; a tag nobody active uses is dead weight even if it sounds plausible.
+
+**What kills it:** a tag broad enough to fit any dev post (`#tech`, `#software`, `#100DaysOfCode`), a tag that's technically related but not what today's post is actually about (tagging `#AI` on a post about a CSS bug because the project happens to be AI-related), or padding to 3 when only 1 or 2 real ones exist.
+
+**Placement:** together, on their own last line, after the post's substance — not woven into the sentence itself. `Finally understood grid minmax() — minmax(0, 1fr) instead of 1fr is what stops overflow.\n\n#CSS #Frontend` not `Finally understood #CSS grid's #minmax()...`.
+
 ## Worked examples
 
 **From a digest bullet:** "spent ages on flaky test — was a shared module-level fixture holding state between tests"

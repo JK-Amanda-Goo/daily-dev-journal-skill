@@ -32,11 +32,15 @@ It asks which day, and whether the post should be about one project or the whole
 ## Requirements
 
 - Claude Code (or another agent that supports skills), with Python 3 for the session-digest script
-- Nothing else — no API keys, no X credentials, no external services
+- No API keys, no X credentials. If you turn on researched community tags (below), that one optional step uses a web search to check which hashtags are actually live — everything else needs nothing external.
 
 ## Voice
 
 If you have a personal writing-voice skill (something like `yourname-voice`), name it in `config.md` and this skill drafts through it. Without one, it matches how you write in the conversation.
+
+## Community tags (optional)
+
+Off by default. Set `Hashtags: research 3 community tags` in `config.md` (or ask for it on a given run) and the skill will find, for that post's specific topic, up to 3 hashtags that are actually in live use — not generic reach-seeking ones. Real accounts in that niche, checked via web search, not guessed. Placed together on the post's last line, and covered by the same privacy pass as the rest of the post.
 
 ## What this intentionally doesn't do
 
