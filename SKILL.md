@@ -53,7 +53,7 @@ The point of pulling from two sources is that they fail in opposite ways. A dev-
 **First, the dev-journal.** Look for entries for that date at the location in `config.md` (default `~/dev-journal/`):
 
 ```bash
-ls ~/dev-journal/*/$(date +%Y-%m-%d)-*.md 2>/dev/null    # adjust date as needed
+ls ~/dev-journal/*/TARGET_DATE-*.md 2>/dev/null    # TARGET_DATE = the YYYY-MM-DD chosen in Step 1, not necessarily today
 ```
 
 If entries exist, read them. They're the strongest signal — the user already decided this was worth recording.

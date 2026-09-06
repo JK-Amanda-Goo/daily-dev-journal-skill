@@ -2,6 +2,11 @@
 
 All notable changes to this skill are documented here. Format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versions are tagged in git and published as GitHub Releases.
 
+## [0.1.2] - 2026-09-05
+
+### Fixed
+- Step 2's dev-journal lookup command hardcoded `$(date +%Y-%m-%d)`, which always evaluates to today regardless of the date chosen in Step 1. Since Step 1 explicitly supports "yesterday" or an arbitrary date, running the command as shown for anything but today silently looked in the wrong place and returned nothing — reading as "no journal entry for that day" instead of the real cause. Replaced with an explicit `TARGET_DATE` placeholder to be filled with the date actually chosen in Step 1, matching how `find_sessions.py` already takes an explicit `--date` argument for the same reason.
+
 ## [0.1.1] - 2026-09-04
 
 ### Added
